@@ -4,7 +4,7 @@
   "description": "A little project to parse the Preamble of the US Constitution for various types of words",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
   "repository": {
