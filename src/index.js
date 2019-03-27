@@ -5,6 +5,7 @@ import displayResult from './displayResult';
 import displayWordArray from './displayWordArray';
 import displayResultLabel from './displayResultLabel';
 import getHighlightedWordArrayForSingleLetter from './getHighlightedWordArrayForSingleLetter';
+import getHighlightedWordArrayForTwoLetter from './getHighlightedWordArrayForTwoLetter';
 
 const preamble = 'We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.';
 
@@ -35,6 +36,8 @@ eButton.addEventListener('click', (event) => {
 tAndEButton.addEventListener('click', (event) => {
   const wordCount = doCountForTwoLetters(wordArray, 't', 'e');
   const resultLabel = 'words that begin with "t" and end with "e"';
+  const teArray = getHighlightedWordArrayForTwoLetter(wordArray, 't', 'e');
+  displayWordArray(teArray);
   displayResult(wordCount);
   displayResultLabel(resultLabel);
 });
