@@ -1,0 +1,19 @@
+{
+  "name": "preamble-parser",
+  "version": "1.0.0",
+  "description": "A little project to parse the Preamble of the US Constitution for various types of words",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jufebrown/preamble-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jufebrown/preamble-parser/issues"
+  },
+  "homepage": "https://github.com/Jufebrown/preamble-parser#readme"
+}
