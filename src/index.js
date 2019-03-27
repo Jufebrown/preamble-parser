@@ -5,4 +5,3 @@ const preamble = 'We the People of the United States, in Order to form a more pe
 const wordArray = stringToWordArray(preamble);
 
 console.log('wordArray', wordArray);
-console.log('hello');
