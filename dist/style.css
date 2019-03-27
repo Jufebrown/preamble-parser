@@ -1,5 +1,23 @@
+button {
+  width: 25%;
+  padding: 10px;
+}
+
 .preamble {
   padding: 2em 1em;
   text-align: center;
   font-size: 2em;
+}
+
+.counter-container {
+  text-align: center;
+}
+
+.result {
+  margin-top: 1em;
+  font-size: 4em;
+}
+
+.highlight {
+  background-color: rgb(163, 255, 71);
 }
