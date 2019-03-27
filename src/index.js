@@ -3,6 +3,7 @@ import doCountForSingleLetter from './doCountForSingleLetter';
 import doCountForTwoLetters from './doCountForTwoLetters';
 import displayResult from './displayResult';
 import displayWordArray from './displayWordArray';
+import displayResultLabel from './displayResultLabel';
 
 const preamble = 'We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.';
 
@@ -14,17 +15,23 @@ const tAndEButton = document.querySelector('.t-e-button');
 
 tButton.addEventListener('click', (event) => {
   const wordCount = doCountForSingleLetter(wordArray, 't', 'beginning');
+  const resultLabel = 'words that begin with "t"';
   displayResult(wordCount);
+  displayResultLabel(resultLabel);
 });
 
 eButton.addEventListener('click', (event) => {
   const wordCount = doCountForSingleLetter(wordArray, 'e', 'end');
+  const resultLabel = 'words that end with "e"';
   displayResult(wordCount);
+  displayResultLabel(resultLabel);
 });
 
 tAndEButton.addEventListener('click', (event) => {
   const wordCount = doCountForTwoLetters(wordArray, 't', 'e');
+  const resultLabel = 'words that begin with "t" and end with "e"';
   displayResult(wordCount);
+  displayResultLabel(resultLabel);
 });
 
 displayWordArray(wordArray);
