@@ -4,8 +4,8 @@ export default function doCountForTwoLetters(wordArray, beginningLetter, endingL
   let wordCounter = 0;
   for (let i = 0; i < wordArray.length; i += 1) {
     if (
-      isLetterAtPosition(wordArray[i], beginningLetter, 'beginning')
-      && isLetterAtPosition(wordArray[i], endingLetter, 'end')
+      isLetterAtPosition(wordArray[i].toLowerCase(), beginningLetter, 'beginning')
+      && isLetterAtPosition(wordArray[i].toLowerCase(), endingLetter, 'end')
     ) {
       wordCounter += 1;
     }
